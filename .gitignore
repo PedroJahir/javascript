@@ -1,0 +1,77 @@
+<html>
+<head>
+</head>
+<body onload="generar()">
+</body>
+</html>
+<script>
+function generar()
+{
+document.write("<CENTER><H1> COLEGIO FISCAL MIXTO 'EL EMPALME'</lavel></H1></CENTER>");
+document.write("<CENTER><img src='file:///C:/Users/pedro_000/Desktop/pagina/imagenes/colegio.jpg.png'></CENTER><H3 TEXTO EDITADO></H3></figure><fieldset style='border:10px groove #ccc; background:16BCBC;'><form id='formularioNota' name='formularioNota'/>");
+document.write("<legend><H3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingrese sus Datos </H3></legend>");
+document.write("<H4>Nombre Y Apellido  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type='text' name='nombre' id='nombrevalidar' placeholder='nombre y apellido'/></H4></br><input type='button' value='Ingresar' onclick='nombre1()' style='border:6px groove #ccc;background-color:#ffff00'><br>");
+document.write("<H4>Numero de Cedula    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='numcedula' id='cedulavalidar' placeholder='Numero Cedula'/></H4></br><input type='button' value='Ingresar' onclick='cedula1()' style='border:6px groove #ccc;background-color:#ffff00' ><br>");
+document.write("<H4>Num de Telefono &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='numtelefono' id='telefonovalidar' placeholder='999 999 999'/></H4></br><input type='button' value='Ingresar' onclick='telefono1()' style='border:6px groove #ccc;background-color:#ffff00' ><br>");
+document.write("<H4>Cursos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='tex' name='curso' id='curso' placeholder='cursos'/></H4></br><input type='button' value='Ingresar' onclick='cursos1()'  style='border:6px groove #ccc;background-color:#ffff00'><br>");
+document.write("<H4>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='correovalidar' type='mail' name='email' id='email' placeholder='info@tuweb.com' required='required'/></H4></br><input type='button' value='Ingresar' onclick='correo1()'  style='border:6px groove #ccc;background-color:#ffff00'><br>");
+documet.write("<H4>Nota del Primer Parcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='primer' id='primer' value='0' onkeyup='validarNota(this.value)' oninput='validarNumeros(this.value)' /></H4></br><H4>Nota del Segundo Parcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='segundo' id='segundo' value='0'onkeyup='validarNota(this.value)' /><H4></br><H4>Promedio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='promedio' id='promedio' value='0'/></pre></H4></br><H4><pre><input type='button' value='Calcular' onclick='funcionCalcularPromedio()'/></pre></H4>  </table></form>");
+document.write("<ul><link rel='search' type='application/opensearchdescription+xml' href='/opensearch.xml' title='Colegio'><RIGHT><H3> CONTENIDO EDITABLE</H3><ul contenteditable='true'><li> El siguente texto puede</li><li> ser editado por cualquiera</li><li> de favor se les ruega no </li><li> introducir texto no adecuado</li></ul></RIGHT><br><br><br> <CENTER><a href='https://www.twitter.com/' target='_blank'><liv>*Twitter <img src='file:///C:/Users/pedro_000/Desktop/pagina/descarga.jpg'> </li></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <a href='https://www.youtube.com/' target='_blank'><liv>*Youtube <img src='file:///C:/Users/pedro_000/Desktop/pagina/descarga%20(1).jpg'> </li></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href='https://www.facebook.com/' target='_blank'><liv>*Facebook <img src='file:///C:/Users/pedro_000/Desktop/pagina/descarga%20(2).jpg'> </li></a></CENTER></ul> </body>");
+}
+function cedula1()
+{
+if (/[a-z]/.test(document.getElementById("cedulavalidar").value))
+     {
+     alert("Incorrecto solo numeros")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+
+function nombre1()
+{
+if (/[0-9]/.test(document.getElementById("nombrevalidar").value))
+     {
+     alert("Incorrecto solo letras")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+function telefono1()
+{
+if (/[a-z]/.test(document.getElementById("telefonovalidar").value))
+     {
+     alert("Incorrecto solo numeros")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+696
+	function funcionCalcularPromedio()
+	{
+		var contador="hola";
+		document.getElementById("promedio").value=
+		(parseInt(document.getElementById("primer").value )+ 
+		parseInt(document.getElementById("segundo").value))/2;
+		alert("Ese es su Promedio");
+		
+var mydate=new Date(); 
+var year=mydate.getYear(); 
+if (year < 1000) 
+year+=1900; 
+var day=mydate.getDay(); 
+var month=mydate.getMonth()+1; 
+if (month<10) 
+month="0"+month; 
+var daym=mydate.getDate(); 
+if (daym<10) 
+daym="0"+daym; 
+document.write("<small><font color='000000' face='Arial'><b>"+daym+"/"+month+"/"+year+"</b></font></small>") 
+}
+</script>
